@@ -1,0 +1,109 @@
+.numbers{
+  background-color: rgb(146, 78, 30);
+  color: white;
+  border-radius: 50%;
+  padding: 7px;
+  font-size: 20px;
+}
+
+#first{
+  border-top-left-radius:10px ;
+  border-top-right-radius: 10px;
+}
+  
+#roadmap a{
+  background-color: sandybrown;
+  color: white ;
+  border: white ;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 5px;
+  margin: 10px;
+}
+
+#roadmap a:hover{
+  background-color: white;
+  color: sandybrown;
+  border: sandybrown;
+  transition: 0.7s;
+}
+
+.collapsible {
+  background-color: rgb(148, 94, 47);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-bottom: 1px solid saddlebrown;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(100, 50, 15);
+  transition: 0.5s;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color:saddlebrown;
+  color: white;
+}
+
+#social a{
+  background-color: sandybrown;
+  color: white ;
+  border: white ;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 25px;
+  margin: 10px;
+}
+
+#social a:hover{
+  background-color: white;
+  color: sandybrown;
+  border: sandybrown;
+  transition: 0.7s;
+}
+
+#litepaper a{
+  background-color: sandybrown;
+  color: white ;
+  border: white ;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+#litepaper a:hover{
+  background-color: white;
+  color: sandybrown;
+  border: sandybrown;
+  transition: 0.7s;
+}
+
+#pancakeswap a{
+  background-color: sandybrown;
+  color: white ;
+  border: white ;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+#pancakeswap a:hover{
+  background-color: white;
+  color: sandybrown;
+  border: sandybrown;
+  transition: 0.7s;
+}
+
+#tokeconomics img{
+  margin: auto;
+}

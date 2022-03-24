@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Ape Monkey NFT</title>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div><img style="margin: auto;" src="ape.png" alt="$APE"></div>
+  <h1 style="color: saddlebrown;">Welcome to APE Monkey NFT</h1>
+  <button type="button" id="first" class="collapsible">How To Buy</button>
+  <div class="content">
+    <p> <strong class="numbers">1</strong> Download Metamask Extension & TrustWallet App</p>
+    <p> <strong class="numbers">2</strong> Purchase Binance Tokens (BNB) and send them to your
+      MetaMask or Trust Wallet. (Remember to send a small
+      amount if it's your first transaction to make sure you have
+      the transfer set up correctly)</p>
+    <p> <strong class="numbers">3</strong>On our home page, click Buy'. This will open a Dapp
+      Exchange Called "PancakeSwap".</p>
+    <p><strong class="numbers">4</strong>A popup will open, clickthe checkbox "l understand", this will
+      load Daddly Doge into PancakeSwap. Alternatively you can
+      load PancakeSwap manually and use this address-
+      0x6SD4GSD64sd6f4d</p>
+    <p><strong class="numbers">5</strong>Make sure your MetaMask Wallet or Trust Wallet Is synced
+      with PancakeSwap.</p>
+    <p><strong class="numbers">6</strong>Set the amount of ApeMonkeyNFT you would like to purchase,
+      and set slippage to 12%. Then press Swap!</p>
+    <p><strong class="numbers">7</strong>Congratulations... You have $APE</p>
+  </div>
+  <button type="button" class="collapsible">Roadmap</button>
+  <div id="roadmap" class="content">
+    <p><a href="roadmap.jpg" download>Download</a></p>
+  </div>
+  <button type="button" class="collapsible">Tokeconomics</button>
+  <div id="tokeconomics" class="content">
+    <p><img src="tokeconomics.png" alt="Tokeconomics"></p>
+  </div>
+  <button type="button" class="collapsible">Social</button>
+  <div id="social" class="content">
+    <a href="https://twitter.com/ApemOnkeyNFT1" class="fa fa-twitter"> Twitter</a><a href="apemonkeynft.github.io"
+      class="fa fa-github"> Github</a>
+  </div>
+  <button type="button" class="collapsible">Litepaper</button>
+  <div id="litepaper" class="content">
+    <p>What is the Ape Monkey NFT?</p>
+    <p>Ape Moneky NFT is decentralized, safety and collectible a collection series.</p>
+    <p>How many NFT in collection ? </p>
+    <p>386 NFT . 200 Bronze , 100 Silver , 50 Gold , 20 Platinium , 10 Epic ,5 Legendary and 1 $APE</p>
+    <p>How to find news ? </p>
+    <p>In Twitter</p>
+  </div>
+  <button type="button" class="collapsible">PancakeSwap Buy</button>
+  <div id="pancakeswap" class="content">
+    <p><a href="pancakeswap.finance">BUY</a></p>
+  </div>
+  <button onclick="copyToClipboard('#contractAddress')" type="button" class="collapsible">Copy Contract Address</button>
+  <div style="border-bottom-left-radius:10px ; border-bottom-right-radius: 10px;" class="content">
+    <p id="contractAddress">0x8ffb9C8cb811D7d2D9A9E5838c47CF4FB94CAd00</p>
+  </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+</body>
+
+</html>
